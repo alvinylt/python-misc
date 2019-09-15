@@ -1,2 +1,2 @@
 # Python
-A repository for some simple Python scripts.
+This is a repository of some simple Python scripts.
