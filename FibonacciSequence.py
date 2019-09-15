@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[29]:
-
-
 a = 1
 b = 1
 k = 2
@@ -23,10 +17,3 @@ else:
         a = b
         b = c
         k = k + 1
-
-
-# In[ ]:
-
-
-
-
