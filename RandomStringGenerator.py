@@ -1,12 +1,12 @@
-import random as rd
+import random
 
-x = 0
-y = input('How many characters do you want?')
-y = int(y)
-p = str()
-r = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~`!@#$%^&*()-_=+\|{[]}:;?/>.<,\'\"'
+count = 0
+length = int(input("How many characters do you want?"))
+string = str()
+char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*"
 
-while x < y:
-    p = rd.choice(r) + p
-    x = x + 1
-print(p)
+while count < length:
+    string = random.choice(char) + string
+    count += 1
+
+print(string)

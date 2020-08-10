@@ -1,8 +1,8 @@
 a = 1
 b = 1
 k = 2
-n = input('How many numbers do you want?')
-n = int(n)
+n = int(input("How many numbers do you want? "))
+
 if n == 1:
     print(a)
 elif n == 2:

@@ -1,14 +1,18 @@
 import random
-tar = random.randint(0,100)
-ans = 101
+ans = random.randint(0, 100)
+guess = int()
+count = 1
 
-while ans != tar:
-    ans = input('Guess the integer: ')
-    ans = int(ans)
-    if ans == tar:
-        print('Your answer is correct!')
+while guess != ans:
+    guess = int(input("Guess the integer: "))
+    
+    if guess == ans:
+        print("Your answer is correct!")
+        print("You made " + str(count) + " guesses.")
         break
-    elif ans > tar:
-        print('Your answer is too large.')
+    elif guess > ans:
+        print("Your answer is too large. Try again.")
+        count += 1
     else:
-        print('Your answer is too small.')
+        print("Your answer is too small. Try again.")
+        count += 1
